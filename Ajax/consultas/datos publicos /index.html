@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <style>
+        table {
+            width: 100%;
+            background-color: blanchedalmond;
+        }
+
+        th,
+        td {
+            width: 25%;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>Buscardor v1.0</legend>
+        <!-- Buscador de Farmacias <input id="municipio2" name="municipio" placeholder="Introduzca el nombre del municipio"> -->
+
+        <select id="municipio2">
+            <option>-selecciona-</option>
+        </select>
+        <button id="carga" type="submit" value="registrar"> Buscar </button>
+        <button id="validar"> validar </button>
+        <table border="1px">
+            <tbody>
+
+                <thead>Tabla de farmacias</thead>
+                <th>Nombre</th>
+                <th>Municipio</th>
+                <th>Telefono</th>
+                <th> Imagen</th>
+
+
+                <tr>
+                    <td id="ppal"></td>
+                    <td id="municipio"> </td>
+                    <td id="telefono"> </td>
+
+                    <td id="img2"> </td>
+
+
+
+
+                </tr>
+
+
+
+            </tbody>
+
+        </table>
+
+
+    </fieldset>
+
+
+
+
+
+
+</body>
+
+</html>
