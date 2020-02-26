@@ -148,11 +148,7 @@ $(document).ready(function () {
     }
 
 
-    // $(function () {
-    //     listarMunicipios();
-    //     $('button:contains("Logout")').on('change', function () { listarMunicipios() });
-    // });
-
+ 
     function listarUsuarios() {
         $.post('http://localhost:8001/servidor.php')
             .done(function (datos) {
