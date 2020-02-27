@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery UI Dialog - Dialogo modal</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal: true
+            });
+
+            $("#dialog").dialog({
+
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $("#abrir").on("click", function () {
+                $("#dialog").dialog("open").resizable();
+            });
+            // listarMunicipios();
+
+            // function listarMunicipios() {
+    //     $.get("https://jsonplaceholder.typicode.com/posts")
+    //         .done(function (datos) {
+    //             //  var json = JSON.parse(datos);
+    //             console.log(datos[1]);
+    //             for (let index = 0; index < 5; index++) {
+    //                 $("#inicio").append('<h1>'+datos[index].title+'</h1>');
+                    
+    //             }
+    //             $.each(datos, function (id) {
+    //                 $("#municipio2").append(`<option value="${id.Municipio}">${id.Municipio}</option>`);
+    //                 console.log(datos)
+    //             });
+
+    //         })
+    //         .fail(function (request, errorMessage) {
+    //             alert('Error: ' + errorMessage);
+    //         });
+            
+        
+    // }
+
+    $('#inicio').wrap('<div> <p> hola </p> </div>');
+
+        });
+    </script>
+</head>
+
+<body>
+    Resultado de la partida:
+    <div id="inicio"></div>
+    <div id="dialog" title="Dialogo básico">
+        <p>Ayuda:En este enlace puedes encontrar ayuda sobre la partida.</p>
+    </div>
+    <button id="abrir">Ayuda</button>
+</body>
+
+</html>

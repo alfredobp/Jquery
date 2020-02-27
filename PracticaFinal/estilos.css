@@ -1,0 +1,31 @@
+#cabecera {
+    align-content: center;
+}
+#tablero {
+    width:980px;
+    height:700px;
+    background-color: #0f0;
+}
+
+.celda{
+    width:70px;
+    height:70px;
+    float:left;
+    font-size: 3em;
+    text-align: center;
+}
+.celda span{
+    font-weight: bold;
+}
+
+.blanca {
+    background-color: #fff;
+}
+
+.negra {
+    background-color: #666;
+}
+
+.roja {
+    background-color: rgb(250, 24, 24);
+}
